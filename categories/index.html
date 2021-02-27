@@ -353,11 +353,20 @@
                 
                 
                 
-                <a href="/categories/%E6%9D%82%E8%B0%88/" title="杂谈: 1">
+                <a href="/categories/%E5%82%85%E9%87%8C%E5%8F%B6%E7%BA%A7%E6%95%B0%E5%92%8C%E5%8F%98%E6%8D%A2/" title="傅里叶级数和变换: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #F9EBEA;">杂谈
+                            style="background-color: #F9EBEA;">傅里叶级数和变换
                         <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/categories/%E6%9D%82%E8%B0%88/" title="杂谈: 2">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #F5EEF8;">杂谈
+                        <span class="tag-length">2</span>
                     </span>
                 </a>
                 
@@ -365,16 +374,7 @@
                 <a href="/categories/markdown/" title="markdown: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #F5EEF8;">markdown
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/categories/%E5%82%85%E9%87%8C%E5%8F%B6%E7%BA%A7%E6%95%B0%E5%92%8C%E5%8F%98%E6%8D%A2/" title="傅里叶级数和变换: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            style="background-color: #D5F5E3;">傅里叶级数和变换
+                            style="background-color: #D5F5E3;">markdown
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -430,7 +430,7 @@
                     color: '#3C4858'
                 }
             },
-            indicator: [{"name":"杂谈","max":2},{"name":"markdown","max":2},{"name":"傅里叶级数和变换","max":2},{"name":"推荐","max":2}],
+            indicator: [{"name":"傅里叶级数和变换","max":3},{"name":"杂谈","max":3},{"name":"markdown","max":3},{"name":"推荐","max":3}],
             nameGap: 5,
             center: ['50%','55%'],
             radius: '66%'
@@ -441,7 +441,7 @@
             itemStyle: {normal: {areaStyle: {type: 'default'}}},
             data : [
                 {
-                    value : [1,1,1,1],
+                    value : [1,2,1,1],
                     name : '文章分类数量'
                 }
             ]
@@ -605,15 +605,11 @@ $(function () {
         })
     </script>
     
+    <!-- 鼠标点击烟花效果 -->>
+    <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+    <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+    <script type="text/javascript" src="/js/fireworks.js"></script>
     
-    <!--添加樱花飘落效果-->>
-    <script type="text/javascript">
-        //只在桌面版网页启用特效
-        var windowWidth = $(window).width();
-        if (windowWidth > 768) {
-            document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
-        }
-    </script>
     
     
     <!--添加鼠标彩虹星星掉落跟随效果-->>

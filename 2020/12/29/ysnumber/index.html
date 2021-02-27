@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="markdown入门, Shawn">
+    <meta name="keywords" content="原神伤害加成详解, Shawn">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>markdown入门 | Shawn</title>
+    <title>原神伤害加成详解 | Shawn</title>
     <link rel="icon" type="image/png" href="/medias/avatar.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -313,12 +313,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('medias/featureimages/2.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('medias/featureimages/25.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">markdown入门</h1>
+                    <h1 class="description center-align post-title">原神伤害加成详解</h1>
                 </div>
             </div>
         </div>
@@ -435,8 +435,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Markdown/">
-                                <span class="chip bg-color">Markdown</span>
+                            <a href="/tags/%E6%B8%B8%E6%88%8F/">
+                                <span class="chip bg-color">游戏</span>
+                            </a>
+                        
+                            <a href="/tags/%E9%9A%8F%E7%AC%94/">
+                                <span class="chip bg-color">随笔</span>
                             </a>
                         
                     </div>
@@ -447,8 +451,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/markdown/" class="post-category">
-                                markdown
+                            <a href="/categories/%E6%9D%82%E8%B0%88/" class="post-category">
+                                杂谈
                             </a>
                         
                     </div>
@@ -460,7 +464,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-03-21
+                    2020-12-29
                 </div>
                 
 
@@ -477,133 +481,55 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="一、入门技巧"><a href="#一、入门技巧" class="headerlink" title="一、入门技巧"></a>一、入门技巧</h1><h2 id="1、Markdown-标题"><a href="#1、Markdown-标题" class="headerlink" title="1、Markdown 标题"></a>1、Markdown 标题</h2><pre class="line-numbers language-markdown"><code class="language-markdown"><span class="token title important"><span class="token punctuation">#</span> 标题</span>
-<span class="token title important"><span class="token punctuation">##</span> 一级</span>
-<span class="token title important"><span class="token punctuation">###</span> 二级</span>
-<span class="token title important"><span class="token punctuation">####</span> 三级</span>
-<span class="token title important"><span class="token punctuation">#####</span> 四级</span>
-<span class="token title important"><span class="token punctuation">######</span> 五级 </span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><h2 id="一级"><a href="#一级" class="headerlink" title="一级"></a>一级</h2><h3 id="二级"><a href="#二级" class="headerlink" title="二级"></a>二级</h3><h4 id="三级"><a href="#三级" class="headerlink" title="三级"></a>三级</h4><h5 id="四级"><a href="#四级" class="headerlink" title="四级"></a>四级</h5><h6 id="五级"><a href="#五级" class="headerlink" title="五级"></a>五级</h6><h2 id="2、Markdown-段落格式"><a href="#2、Markdown-段落格式" class="headerlink" title="2、Markdown 段落格式"></a>2、Markdown 段落格式</h2><p>正文直接输入即可</p>
-<p>换行需要再次回车</p>
-<p><em>斜体</em>：<code>*斜体*</code></p>
-<p><strong>粗体</strong>：<code>**粗体**</code></p>
-<p><strong><em>粗斜体</em></strong>：<code>***粗斜体***</code></p>
-<p>本人精通python的hello world</p>
-<pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"hello world"</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>正文中的代码<code>import numpy as np</code></p>
-<p>分割线<code>***</code>，<code>---</code>，<code>-------------</code></p>
+                <p>注：参考链接：<a href="https://bbs.nga.cn/read.php?tid=23435445" target="_blank" rel="noopener">nga</a></p>
+<h2 id="一、DPS"><a href="#一、DPS" class="headerlink" title="一、DPS"></a>一、DPS</h2><p>本文主要采用单位时间内造成的伤害，即DPS</p>
+<h3 id="1、对于普通类型的伤害"><a href="#1、对于普通类型的伤害" class="headerlink" title="1、对于普通类型的伤害"></a>1、对于普通类型的伤害</h3><p>其公式为： <code>DPS=(r/t)*s*DR*RR*AT*CR*DB</code></p>
+<p>共有<strong>7个乘区</strong>，<strong>r</strong>是动作伤害倍率，<strong>t</strong>为动作持续时间 ，<strong>s</strong>为攻速 ，<strong>DR</strong>是防御减免效果，<strong>RR</strong>是元素抗性，<strong>AT</strong>为攻击力，<strong>CR</strong>为暴击收益，<strong>DB</strong>为增伤。其中除暴击收益<strong>CR</strong>外，每个区间内的相互加成为加值。</p>
+<h3 id="2、对于元素反应中的元素增幅-蒸发，融化-伤害"><a href="#2、对于元素反应中的元素增幅-蒸发，融化-伤害" class="headerlink" title="2、对于元素反应中的元素增幅(蒸发，融化)伤害"></a>2、对于元素反应中的元素增幅(蒸发，融化)伤害</h3><p>其伤害公式为: <code>DPS=(r/t)*s*DR*RR*AT*CR*DB*EAR*SP</code></p>
+<p>比普通类型多了两项，<strong>EAR</strong>为增幅倍率，<strong>SP</strong>为法术强度</p>
+<h3 id="3、对于元素反应中的聚变-超导，超载，感电-伤害"><a href="#3、对于元素反应中的聚变-超导，超载，感电-伤害" class="headerlink" title="3、对于元素反应中的聚变(超导，超载，感电)伤害"></a>3、对于元素反应中的聚变(超导，超载，感电)伤害</h3><p>其伤害公式为 <code>Dmg=LR*RR*EFR*SP</code></p>
+<p>其中<strong>LR</strong>为等级系数不可改变，<strong>EFR</strong>为聚变倍率不可改变。</p>
+<h2 id="二、乘区介绍"><a href="#二、乘区介绍" class="headerlink" title="二、乘区介绍"></a>二、乘区介绍</h2><h3 id="1、伤害倍率r-ratio"><a href="#1、伤害倍率r-ratio" class="headerlink" title="1、伤害倍率r(ratio)"></a>1、伤害倍率r(ratio)</h3><p>每个角色的每个动作一般不同，受到角色天赋等级，角色额外天赋，角色命座，武器特效影响。比如6级第一天赋的刻晴普通攻击的第一击伤害倍率为59.6%。<br>这个是可以被影响的，比方说菲谢尔的大多数提升都是额外的hit，相当于直接加成伤害倍率。伤害倍率直接影响到角色的输出能力，也是最为直观的数据，每个人都可以看到不同技能的倍率。</p>
+<h3 id="2、动作的基础持续时间t"><a href="#2、动作的基础持续时间t" class="headerlink" title="2、动作的基础持续时间t"></a>2、动作的基础持续时间t</h3><p>每个角色的每个动作一般不同，一般是固定值。</p>
+<h3 id="3、攻速s-speed"><a href="#3、攻速s-speed" class="headerlink" title="3、攻速s(speed)"></a>3、攻速s(speed)</h3><p>受到角色天赋，角色命座,武器特效影响。有些角色可以为了攻速，而放弃普攻后半段，来规避后摇，比如菲谢尔。</p>
+<h3 id="4、防御减免效果DR-Defensive-Ratio"><a href="#4、防御减免效果DR-Defensive-Ratio" class="headerlink" title="4、防御减免效果DR(Defensive Ratio)"></a>4、防御减免效果DR(Defensive Ratio)</h3><ul>
+<li><code>DR=(L+100)/((1-f)Def+L+100)</code></li>
+</ul>
+<p>其中<strong>Def</strong>为怪物的防御，满足<strong>Def</strong>=l+100，其中<strong>l</strong>为怪物等级；<strong>f</strong>为防御力降低效果。可莉二命可以影响这个乘区。</p>
+<h3 id="5、抗性RR-Resistance-Ratio"><a href="#5、抗性RR-Resistance-Ratio" class="headerlink" title="5、抗性RR(Resistance Ratio)"></a>5、抗性RR(Resistance Ratio)</h3><ul>
+<li><code>RR=25/(25+R_0) 当 R_0&gt;75%</code></li>
+<li><code>1-R_0 当 0&lt;R_0&lt;75%</code></li>
+<li><code>1-R_0/2 当 R_0&lt;0</code></li>
+</ul>
+<p>怪物抗性表：<br><img src="https://ftp.bmp.ovh/imgs/2021/02/fdada39465969453.png" width="50%"></p>
+<h3 id="6、攻击力AT-Attack"><a href="#6、攻击力AT-Attack" class="headerlink" title="6、攻击力AT(Attack)"></a>6、攻击力AT(Attack)</h3><ul>
+<li><code>AT=(AT_ch+AT_wp)*(1+ar)+AP</code></li>
+</ul>
+<p>其中<strong>AT_ch</strong>为角色基础攻击力，仅受到角色等级影响。<strong>AT_wp</strong>为武器基础攻击力，仅受到武器基础攻击力影响。</p>
+<p><strong>ar</strong>为攻击力加成百分比受到角色突破加成，角色天赋，角色命座，武器副词条，武器特效，圣遗物主词条，圣遗物副词条，圣遗物套装效果影响。</p>
+<p><strong>AP</strong>为直接攻击力加成，受到角色天赋，角色命座，圣遗物主词条(羽毛)，圣遗物副词条影响。</p>
+<h3 id="7、暴击收益-CR-Critical-Ratio"><a href="#7、暴击收益-CR-Critical-Ratio" class="headerlink" title="7、暴击收益 CR(Critical Ratio)"></a>7、暴击收益 CR(Critical Ratio)</h3><ul>
+<li><code>CR=1+P*CD</code></li>
+</ul>
+<p><strong>P</strong>为暴击率，受到角色天赋，角色命座，武器副词条，武器特效，圣遗物主词条，圣遗物副词条，圣遗物套装效果影响。</p>
+<p><strong>CD</strong>为暴击伤害，受到角色突破，武器副词缀，武器特效，圣遗物主词条，圣遗物副词条等影响。</p>
+<h3 id="8、额外收益-DB-Damage-Bonus"><a href="#8、额外收益-DB-Damage-Bonus" class="headerlink" title="8、额外收益 DB(Damage Bonus)"></a>8、额外收益 DB(Damage Bonus)</h3><ul>
+<li><code>DB=1+ER+WR+HR+OR......</code></li>
+</ul>
+<p><strong>ER</strong>(Element Ratio)为元素额外伤害，受到角色突破加成，角色天赋，角色命座，武器副词缀，武器特效，圣遗物主词条(杯)，圣遗物套装效果影响。</p>
+<p><strong>WR</strong>(Weapon Ratio)为武器特效伤害。</p>
+<p><strong>HR</strong>(Holy Ratio)为额外圣遗物套装效果。</p>
+<p><strong>OR</strong>(Other Ratio)为其他效果。</p>
 <hr>
-<hr>
-<p>删除线：</p>
-<p><code>~~喵铃酱真可爱~~</code>，<del>喵铃酱真可爱</del></p>
-<p>下划线：</p>
-<p>（注意结尾要有斜线）</p>
-<p><code>&lt;u&gt;人不能，至少不该&lt;/u&gt;</code>，<u>人不能，至少不该</u></p>
-<p>脚注：</p>
-<p><code>我爱物理[^无力]</code>，我爱物理 [^233]。<br>[^233]: 破音</p>
-<h2 id="Markdown-列表"><a href="#Markdown-列表" class="headerlink" title="Markdown 列表"></a>Markdown 列表</h2><pre class="line-numbers language-markdown"><code class="language-markdown"><span class="token list punctuation">*</span> 第一条
-<span class="token list punctuation">+</span> 第二条
-<span class="token list punctuation">-</span> 第三条<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<p>注意要有空格</p>
-<ul>
-<li>第一条</li>
+<h3 id="9、法术强度SP-Spell-Power"><a href="#9、法术强度SP-Spell-Power" class="headerlink" title="9、法术强度SP(Spell Power)"></a>9、法术强度SP(Spell Power)</h3><ul>
+<li><code>SP=1+MR+RE(AE)</code></li>
 </ul>
-<ul>
-<li>第二条</li>
+<h3 id="10、MR-Master-Ratio-为元素精通加成"><a href="#10、MR-Master-Ratio-为元素精通加成" class="headerlink" title="10、MR(Master Ratio)为元素精通加成"></a>10、MR(Master Ratio)为元素精通加成</h3><ul>
+<li><code>M= k*25EM/9(EM+1400)</code></li>
+<li>其中k为类型系数，融化，蒸发为1，聚变为2.4。</li>
+<li><strong>EM</strong>(Element Ratio)为元素精通数值，受到角色突破，角色天赋，武器副词缀，圣遗物主词条，圣遗物副词条，圣遗物套装效果影响。</li>
 </ul>
-<ul>
-<li>第三条<h2 id="Markdown-区块"><a href="#Markdown-区块" class="headerlink" title="Markdown 区块"></a>Markdown 区块</h2></li>
-</ul>
-<pre class="line-numbers language-markdown"><code class="language-markdown"><span class="token blockquote punctuation">></span>第一层
-<span class="token blockquote punctuation">>></span>第二层
-<span class="token blockquote punctuation">>>></span>第三层<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<blockquote>
-<p>第一层</p>
-<blockquote>
-<p>第二层</p>
-<blockquote>
-<p>第三层</p>
-</blockquote>
-</blockquote>
-</blockquote>
-<h3 id="列表中使用区块"><a href="#列表中使用区块" class="headerlink" title="列表中使用区块"></a>列表中使用区块</h3><pre class="line-numbers language-markdown"><code class="language-markdown"><span class="token list punctuation">*</span> 第一项
-<span class="token code keyword">    > 电动力学</span>
-
-<span class="token code keyword">    > 量子力学</span>
-<span class="token list punctuation">*</span> 第二项<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<ul>
-<li><p>第一项</p>
-<blockquote>
-<p>电动力学</p>
-</blockquote>
-<blockquote>
-<p>量子力学</p>
-</blockquote>
-</li>
-<li><p>第二项</p>
-</li>
-</ul>
-<h2 id="Markdown-链接"><a href="#Markdown-链接" class="headerlink" title="Markdown 链接"></a>Markdown 链接</h2><pre class="line-numbers language-markdown"><code class="language-markdown">这是一个链接<span class="token url">[我的blog](https://caoshaun.gitee.io/)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>这是一个链接<a href="https://caoshaun.gitee.io/">我的blog</a></p>
-<h2 id="Markdown-图片"><a href="#Markdown-图片" class="headerlink" title="Markdown 图片"></a>Markdown 图片</h2><pre class="line-numbers language-markdown"><code class="language-markdown"><span class="token url">![穹妹](https://ftp.bmp.ovh/imgs/2020/03/ff6f8f82097997c1.jpg)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p><img src="https://ftp.bmp.ovh/imgs/2020/03/ff6f8f82097997c1.jpg" alt="穹妹"></p>
-<pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://ftp.bmp.ovh/imgs/2020/03/ff6f8f82097997c1.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>50%<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<img src="https://ftp.bmp.ovh/imgs/2020/03/ff6f8f82097997c1.jpg" width="50%">
-
-<h2 id="Markdown-表格"><a href="#Markdown-表格" class="headerlink" title="Markdown 表格"></a>Markdown 表格</h2><pre class="line-numbers language-markdown"><code class="language-markdown">|表头|表头|
-|---|---|
-|单元格|单元格|
-|单元格|单元格|<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<table>
-<thead>
-<tr>
-<th>表头</th>
-<th>表头</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>单元格</td>
-<td>单元格</td>
-</tr>
-<tr>
-<td>单元格</td>
-<td>单元格</td>
-</tr>
-</tbody></table>
-<pre class="line-numbers language-markdown"><code class="language-markdown">|左对齐|右对齐|居中|
-|:---|---:|:---:|
-|电动|量子|热统|<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<table>
-<thead>
-<tr>
-<th align="left">左对齐</th>
-<th align="right">右对齐</th>
-<th align="center">居中</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">电动</td>
-<td align="right">量子</td>
-<td align="center">热统</td>
-</tr>
-</tbody></table>
-<h1 id="二、高级用法"><a href="#二、高级用法" class="headerlink" title="二、高级用法"></a>二、高级用法</h1><h3 id="支持的HTML元素"><a href="#支持的HTML元素" class="headerlink" title="支持的HTML元素"></a>支持的HTML元素</h3><p>目前支持的 HTML 元素有：<code>&lt;kbd&gt; &lt;b&gt; &lt;i&gt; &lt;em&gt; &lt;sup&gt; &lt;sub&gt; &lt;br&gt;</code>等 ，如：</p>
-<pre class="line-numbers language-markdown"><code class="language-markdown">使用 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>kbd</span><span class="token punctuation">></span></span>Ctrl<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>kbd</span><span class="token punctuation">></span></span>+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>kbd</span><span class="token punctuation">></span></span>Alt<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>kbd</span><span class="token punctuation">></span></span>+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>kbd</span><span class="token punctuation">></span></span>Del<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>kbd</span><span class="token punctuation">></span></span> 重启电脑<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>使用 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd> 重启电脑</p>
-<h3 id="转义"><a href="#转义" class="headerlink" title="转义"></a>转义</h3><p>使用反斜杠转义特殊字符，如：</p>
-<p><code>\*呐呐呐\!</code></p>
-<p>*呐呐呐!</p>
-<h3 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h3><p>以前还接触过latex,可惜现在忘完了</p>
-<pre class="line-numbers language-latex"><code class="language-latex"><span class="token equation string">$$</span>
-<span class="token function selector">\mathbf</span><span class="token punctuation">{</span>V<span class="token punctuation">}</span>_1 <span class="token function selector">\times</span> <span class="token function selector">\mathbf</span><span class="token punctuation">{</span>V<span class="token punctuation">}</span>_2 =  <span class="token function selector">\begin</span><span class="token punctuation">{</span><span class="token keyword">vmatrix</span><span class="token punctuation">}</span> 
-<span class="token function selector">\mathbf</span><span class="token punctuation">{</span>i<span class="token punctuation">}</span> <span class="token punctuation">&amp;</span> <span class="token function selector">\mathbf</span><span class="token punctuation">{</span>j<span class="token punctuation">}</span> <span class="token punctuation">&amp;</span> <span class="token function selector">\mathbf</span><span class="token punctuation">{</span>k<span class="token punctuation">}</span> <span class="token function selector">\\</span>
-<span class="token function selector">\frac</span><span class="token punctuation">{</span><span class="token function selector">\partial</span> X<span class="token punctuation">}</span><span class="token punctuation">{</span><span class="token function selector">\partial</span> u<span class="token punctuation">}</span> <span class="token punctuation">&amp;</span>  <span class="token function selector">\frac</span><span class="token punctuation">{</span><span class="token function selector">\partial</span> Y<span class="token punctuation">}</span><span class="token punctuation">{</span><span class="token function selector">\partial</span> u<span class="token punctuation">}</span> <span class="token punctuation">&amp;</span> 0 <span class="token function selector">\\</span>
-<span class="token function selector">\frac</span><span class="token punctuation">{</span><span class="token function selector">\partial</span> X<span class="token punctuation">}</span><span class="token punctuation">{</span><span class="token function selector">\partial</span> v<span class="token punctuation">}</span> <span class="token punctuation">&amp;</span>  <span class="token function selector">\frac</span><span class="token punctuation">{</span><span class="token function selector">\partial</span> Y<span class="token punctuation">}</span><span class="token punctuation">{</span><span class="token function selector">\partial</span> v<span class="token punctuation">}</span> <span class="token punctuation">&amp;</span> 0 <span class="token function selector">\\</span>
-<span class="token function selector">\end</span><span class="token punctuation">{</span><span class="token keyword">vmatrix</span><span class="token punctuation">}</span>
-<span class="token equation string">$$</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>$$<br>\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix}<br>\mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\<br>\frac{\partial X}{\partial u} &amp;  \frac{\partial Y}{\partial u} &amp; 0 \\<br>\frac{\partial X}{\partial v} &amp;  \frac{\partial Y}{\partial v} &amp; 0 \\<br>\end{vmatrix}<br>$$</p>
-<p>\\</p>
-<script>
+<h3 id="11、AE-Amplification-Enhance-为增幅强度"><a href="#11、AE-Amplification-Enhance-为增幅强度" class="headerlink" title="11、AE(Amplification Enhance)为增幅强度"></a>11、<strong>AE</strong>(Amplification Enhance)为增幅强度</h3><h3 id="12、RE-Reaction-Enhancement-为反应增强"><a href="#12、RE-Reaction-Enhancement-为反应增强" class="headerlink" title="12、RE(Reaction Enhancement)为反应增强"></a>12、<strong>RE</strong>(Reaction Enhancement)为反应增强</h3><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -646,7 +572,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://caoshaun.gitee.io/2020/03/21/hello-world/">http://caoshaun.gitee.io/2020/03/21/hello-world/</a>
+                    <a href="http://caoshaun.gitee.io/2020/12/29/ysnumber/">http://caoshaun.gitee.io/2020/12/29/ysnumber/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -684,8 +610,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Markdown/">
-                                    <span class="chip bg-color">Markdown</span>
+                                <a href="/tags/%E6%B8%B8%E6%88%8F/">
+                                    <span class="chip bg-color">游戏</span>
+                                </a>
+                            
+                                <a href="/tags/%E9%9A%8F%E7%AC%94/">
+                                    <span class="chip bg-color">随笔</span>
                                 </a>
                             
                         </div>
@@ -856,7 +786,7 @@
         repo: 'caoshaun.github.io',
         owner: 'caoshaun',
         admin: "caoshaun",
-        id: '2020-03-21T00-00-00',
+        id: '2020-12-29T00-00-00',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -877,28 +807,29 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/04/25/ming/">
+                <a href="/2020/12/29/ysnumber/">
                     <div class="card-image">
                         
-                        <img src="medias/featureimages/6.jpg" class="responsive-img" alt="晚明有怀">
+                        <img src="medias/featureimages/25.jpg" class="responsive-img" alt="原神伤害加成详解">
                         
-                        <span class="card-title">晚明有怀</span>
+                        <span class="card-title">原神伤害加成详解</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary">
                         
-                            读穿越明朝小说有感
+                            tech-otakus save the world
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-04-25
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-12-29
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -911,15 +842,16 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E9%9A%8F%E7%AC%94/">
-                        <span class="chip bg-color">随笔</span>
+                    <a href="/tags/%E6%B8%B8%E6%88%8F/">
+                        <span class="chip bg-color">游戏</span>
                     </a>
                     
-                    <a href="/tags/%E6%98%8E%E6%9C%9D/">
-                        <span class="chip bg-color">明朝</span>
+                    <a href="/tags/%E9%9A%8F%E7%AC%94/">
+                        <span class="chip bg-color">随笔</span>
                     </a>
                     
                 </div>
@@ -930,45 +862,48 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/03/21/hello-world/">
+                <a href="/2020/07/02/suggestuwp/">
                     <div class="card-image">
                         
-                        <img src="medias/featureimages/2.jpg" class="responsive-img" alt="markdown入门">
+                        <img src="medias/featureimages/11.jpg" class="responsive-img" alt="两款不错的UWP">
                         
-                        <span class="card-title">markdown入门</span>
+                        <span class="card-title">两款不错的UWP</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary block-with-text">
+                    <div class="summary">
                         
-                            第一次使用markdown
+                            Quicklook和Files UWP
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-21
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-02
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/markdown/" class="post-category">
-                                    markdown
+                            <a href="/categories/%E6%8E%A8%E8%8D%90/" class="post-category">
+                                    推荐
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Markdown/">
-                        <span class="chip bg-color">Markdown</span>
+                    <a href="/tags/%E6%8E%A8%E8%8D%90/">
+                        <span class="chip bg-color">推荐</span>
+                    </a>
+                    
+                    <a href="/tags/UWP/">
+                        <span class="chip bg-color">UWP</span>
                     </a>
                     
                 </div>
@@ -1104,13 +1039,6 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
 
 </main>
 
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-<script>
-    MathJax.Hub.Config({
-        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
-    });
-</script>
 
 
 

@@ -352,37 +352,10 @@
             <div class="tag-chips">
                 
                 
-                <a href="/tags/%E9%9A%8F%E7%AC%94/" title="随笔: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="随笔" style="background-color: #F9EBEA;">随笔
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E6%98%8E%E6%9C%9D/" title="明朝: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="明朝" style="background-color: #F5EEF8;">明朝
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/Markdown/" title="Markdown: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="Markdown" style="background-color: #D5F5E3;">Markdown
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
                 <a href="/tags/%E5%82%85%E9%87%8C%E5%8F%B6/" title="傅里叶: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="傅里叶" style="background-color: #E8F8F5;">傅里叶
+                            data-tagname="傅里叶" style="background-color: #F9EBEA;">傅里叶
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -391,7 +364,43 @@
                 <a href="/tags/%E7%AC%94%E8%AE%B0/" title="笔记: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="笔记" style="background-color: #FEF9E7;">笔记
+                            data-tagname="笔记" style="background-color: #F5EEF8;">笔记
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E6%B8%B8%E6%88%8F/" title="游戏: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="游戏" style="background-color: #D5F5E3;">游戏
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E9%9A%8F%E7%AC%94/" title="随笔: 2">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="随笔" style="background-color: #E8F8F5;">随笔
+                        <span class="tag-length">2</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/Markdown/" title="Markdown: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="Markdown" style="background-color: #FEF9E7;">Markdown
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E6%98%8E%E6%9C%9D/" title="明朝: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="明朝" style="background-color: #F8F9F9;">明朝
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -400,7 +409,7 @@
                 <a href="/tags/%E6%8E%A8%E8%8D%90/" title="推荐: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="推荐" style="background-color: #F8F9F9;">推荐
+                            data-tagname="推荐" style="background-color: #82E0AA;">推荐
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -409,7 +418,7 @@
                 <a href="/tags/UWP/" title="UWP: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-active "
-                            data-tagname="UWP" style="background-color: #82E0AA;">UWP
+                            data-tagname="UWP" style="background-color: #D7BDE2;">UWP
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -612,15 +621,11 @@ $(function () {
         })
     </script>
     
+    <!-- 鼠标点击烟花效果 -->>
+    <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+    <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+    <script type="text/javascript" src="/js/fireworks.js"></script>
     
-    <!--添加樱花飘落效果-->>
-    <script type="text/javascript">
-        //只在桌面版网页启用特效
-        var windowWidth = $(window).width();
-        if (windowWidth > 768) {
-            document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
-        }
-    </script>
     
     
     <!--添加鼠标彩虹星星掉落跟随效果-->>

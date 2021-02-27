@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>原神伤害加成详解</title>
+      <link href="/2020/12/29/ysnumber/"/>
+      <url>/2020/12/29/ysnumber/</url>
+      
+        <content type="html"><![CDATA[<p>注：参考链接：<a href="https://bbs.nga.cn/read.php?tid=23435445" target="_blank" rel="noopener">nga</a></p><h2 id="一、DPS"><a href="#一、DPS" class="headerlink" title="一、DPS"></a>一、DPS</h2><p>本文主要采用单位时间内造成的伤害，即DPS</p><h3 id="1、对于普通类型的伤害"><a href="#1、对于普通类型的伤害" class="headerlink" title="1、对于普通类型的伤害"></a>1、对于普通类型的伤害</h3><p>其公式为： <code>DPS=(r/t)*s*DR*RR*AT*CR*DB</code></p><p>共有<strong>7个乘区</strong>，<strong>r</strong>是动作伤害倍率，<strong>t</strong>为动作持续时间 ，<strong>s</strong>为攻速 ，<strong>DR</strong>是防御减免效果，<strong>RR</strong>是元素抗性，<strong>AT</strong>为攻击力，<strong>CR</strong>为暴击收益，<strong>DB</strong>为增伤。其中除暴击收益<strong>CR</strong>外，每个区间内的相互加成为加值。</p><h3 id="2、对于元素反应中的元素增幅-蒸发，融化-伤害"><a href="#2、对于元素反应中的元素增幅-蒸发，融化-伤害" class="headerlink" title="2、对于元素反应中的元素增幅(蒸发，融化)伤害"></a>2、对于元素反应中的元素增幅(蒸发，融化)伤害</h3><p>其伤害公式为: <code>DPS=(r/t)*s*DR*RR*AT*CR*DB*EAR*SP</code></p><p>比普通类型多了两项，<strong>EAR</strong>为增幅倍率，<strong>SP</strong>为法术强度</p><h3 id="3、对于元素反应中的聚变-超导，超载，感电-伤害"><a href="#3、对于元素反应中的聚变-超导，超载，感电-伤害" class="headerlink" title="3、对于元素反应中的聚变(超导，超载，感电)伤害"></a>3、对于元素反应中的聚变(超导，超载，感电)伤害</h3><p>其伤害公式为 <code>Dmg=LR*RR*EFR*SP</code></p><p>其中<strong>LR</strong>为等级系数不可改变，<strong>EFR</strong>为聚变倍率不可改变。</p><h2 id="二、乘区介绍"><a href="#二、乘区介绍" class="headerlink" title="二、乘区介绍"></a>二、乘区介绍</h2><h3 id="1、伤害倍率r-ratio"><a href="#1、伤害倍率r-ratio" class="headerlink" title="1、伤害倍率r(ratio)"></a>1、伤害倍率r(ratio)</h3><p>每个角色的每个动作一般不同，受到角色天赋等级，角色额外天赋，角色命座，武器特效影响。比如6级第一天赋的刻晴普通攻击的第一击伤害倍率为59.6%。<br>这个是可以被影响的，比方说菲谢尔的大多数提升都是额外的hit，相当于直接加成伤害倍率。伤害倍率直接影响到角色的输出能力，也是最为直观的数据，每个人都可以看到不同技能的倍率。</p><h3 id="2、动作的基础持续时间t"><a href="#2、动作的基础持续时间t" class="headerlink" title="2、动作的基础持续时间t"></a>2、动作的基础持续时间t</h3><p>每个角色的每个动作一般不同，一般是固定值。</p><h3 id="3、攻速s-speed"><a href="#3、攻速s-speed" class="headerlink" title="3、攻速s(speed)"></a>3、攻速s(speed)</h3><p>受到角色天赋，角色命座,武器特效影响。有些角色可以为了攻速，而放弃普攻后半段，来规避后摇，比如菲谢尔。</p><h3 id="4、防御减免效果DR-Defensive-Ratio"><a href="#4、防御减免效果DR-Defensive-Ratio" class="headerlink" title="4、防御减免效果DR(Defensive Ratio)"></a>4、防御减免效果DR(Defensive Ratio)</h3><ul><li><code>DR=(L+100)/((1-f)Def+L+100)</code></li></ul><p>其中<strong>Def</strong>为怪物的防御，满足<strong>Def</strong>=l+100，其中<strong>l</strong>为怪物等级；<strong>f</strong>为防御力降低效果。可莉二命可以影响这个乘区。</p><h3 id="5、抗性RR-Resistance-Ratio"><a href="#5、抗性RR-Resistance-Ratio" class="headerlink" title="5、抗性RR(Resistance Ratio)"></a>5、抗性RR(Resistance Ratio)</h3><ul><li><code>RR=25/(25+R_0) 当 R_0&gt;75%</code></li><li><code>1-R_0 当 0&lt;R_0&lt;75%</code></li><li><code>1-R_0/2 当 R_0&lt;0</code></li></ul><p>怪物抗性表：<br><img src="https://ftp.bmp.ovh/imgs/2021/02/fdada39465969453.png" width="50%"></p><h3 id="6、攻击力AT-Attack"><a href="#6、攻击力AT-Attack" class="headerlink" title="6、攻击力AT(Attack)"></a>6、攻击力AT(Attack)</h3><ul><li><code>AT=(AT_ch+AT_wp)*(1+ar)+AP</code></li></ul><p>其中<strong>AT_ch</strong>为角色基础攻击力，仅受到角色等级影响。<strong>AT_wp</strong>为武器基础攻击力，仅受到武器基础攻击力影响。</p><p><strong>ar</strong>为攻击力加成百分比受到角色突破加成，角色天赋，角色命座，武器副词条，武器特效，圣遗物主词条，圣遗物副词条，圣遗物套装效果影响。</p><p><strong>AP</strong>为直接攻击力加成，受到角色天赋，角色命座，圣遗物主词条(羽毛)，圣遗物副词条影响。</p><h3 id="7、暴击收益-CR-Critical-Ratio"><a href="#7、暴击收益-CR-Critical-Ratio" class="headerlink" title="7、暴击收益 CR(Critical Ratio)"></a>7、暴击收益 CR(Critical Ratio)</h3><ul><li><code>CR=1+P*CD</code></li></ul><p><strong>P</strong>为暴击率，受到角色天赋，角色命座，武器副词条，武器特效，圣遗物主词条，圣遗物副词条，圣遗物套装效果影响。</p><p><strong>CD</strong>为暴击伤害，受到角色突破，武器副词缀，武器特效，圣遗物主词条，圣遗物副词条等影响。</p><h3 id="8、额外收益-DB-Damage-Bonus"><a href="#8、额外收益-DB-Damage-Bonus" class="headerlink" title="8、额外收益 DB(Damage Bonus)"></a>8、额外收益 DB(Damage Bonus)</h3><ul><li><code>DB=1+ER+WR+HR+OR......</code></li></ul><p><strong>ER</strong>(Element Ratio)为元素额外伤害，受到角色突破加成，角色天赋，角色命座，武器副词缀，武器特效，圣遗物主词条(杯)，圣遗物套装效果影响。</p><p><strong>WR</strong>(Weapon Ratio)为武器特效伤害。</p><p><strong>HR</strong>(Holy Ratio)为额外圣遗物套装效果。</p><p><strong>OR</strong>(Other Ratio)为其他效果。</p><hr><h3 id="9、法术强度SP-Spell-Power"><a href="#9、法术强度SP-Spell-Power" class="headerlink" title="9、法术强度SP(Spell Power)"></a>9、法术强度SP(Spell Power)</h3><ul><li><code>SP=1+MR+RE(AE)</code></li></ul><h3 id="10、MR-Master-Ratio-为元素精通加成"><a href="#10、MR-Master-Ratio-为元素精通加成" class="headerlink" title="10、MR(Master Ratio)为元素精通加成"></a>10、MR(Master Ratio)为元素精通加成</h3><ul><li><code>M= k*25EM/9(EM+1400)</code></li><li>其中k为类型系数，融化，蒸发为1，聚变为2.4。</li><li><strong>EM</strong>(Element Ratio)为元素精通数值，受到角色突破，角色天赋，武器副词缀，圣遗物主词条，圣遗物副词条，圣遗物套装效果影响。</li></ul><h3 id="11、AE-Amplification-Enhance-为增幅强度"><a href="#11、AE-Amplification-Enhance-为增幅强度" class="headerlink" title="11、AE(Amplification Enhance)为增幅强度"></a>11、<strong>AE</strong>(Amplification Enhance)为增幅强度</h3><h3 id="12、RE-Reaction-Enhancement-为反应增强"><a href="#12、RE-Reaction-Enhancement-为反应增强" class="headerlink" title="12、RE(Reaction Enhancement)为反应增强"></a>12、<strong>RE</strong>(Reaction Enhancement)为反应增强</h3><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 杂谈 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 游戏 </tag>
+            
+            <tag> 随笔 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>两款不错的UWP</title>
       <link href="/2020/07/02/suggestuwp/"/>
       <url>/2020/07/02/suggestuwp/</url>
